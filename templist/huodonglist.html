@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="ROBOTS" content="all" />
+<meta name="keywords" content="xxx" />
+<meta name="description" content="xx" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>旅行者旅游系统  -活动列表</title>
+{旅游_包含:top.html}
+
+<div class="nor" id="vitle">
+您正在浏览 &rsaquo; <a href="/" target="_self">首页</a> &rsaquo; <font color="#FF6600"><strong><i>活动召集</i></strong></font>
+</div>
+
+
+<div class="nor" id="content">
+<div id="content_l">
+    <div id="cl_ct"><div class="cl_ct_l oh"></div>
+    <div class="cl_ct_c">
+报名热线：xxxxx / xxxx 咨询QQ:xxxxx    </div><div class="cl_ct_r oh"></div></div>
+    <div id="cl_class">
+    
+    {旅游:活动终极列表开始 行=6 排=1 截取=28}
+        <div class="tit"><span class="span">积分:{旅游:活动积分}．</span><a href="/huodong.asp?huodongId={旅游:活动编号}" target="_blank">{旅游:活动名称} </a></div>
+        <div class="con">
+        	<div class="col"><a href="/huodong.asp?huodongId={旅游:活动编号}" target="_blank"><img src="{旅游:活动图片地址}" /></a></div>
+	        <div class="cor">
+					<font color="#009900">【活动领队】{旅游:活动领队}</font><br />
+					<font color="#006666">【活动出发时间】{旅游:活动出发时间}</font><br />
+					<font color="#009900">【活动返回时间】{旅游:活动返回时间}</font><br />
+					<font color="#006666">【适合活动人数】{旅游:活动人数}人</font><br />
+					<font color="#009900">【报名方式】报名热线：xxxx / xxxx <br />
+					咨询QQ:xxx / xxx</font><br />
+					<a href="/huodong.asp?huodongId={旅游:活动编号}" target="_blank">【浏览详情】</a> &nbsp;&nbsp;<input type="submit" name="xbutton" id="xxbutton" onclick="location.href='baoming.asp?huoDongId={旅游:活动编号}';" value="我 要 报 名" />
+	        </div>
+        </div>
+    {旅游:活动终极列表结束}
+        
+        
+        
+    
+
+
+    </div>
+</div><div id="content_r">
+ 
+    <div class="cr_tt">推荐活动</div>
+    <div id="cr_cm">
+        {旅游:活动列表开始 行=8 排=1 截取=20}
+    <a href="/huodong.asp?huodongId={旅游:活动编号}" target="_blank" class="txs"><font color="#CC3300">{旅游:列表页活动名称}</font></a>
+    {旅游:活动列表结束}
+     </div>
+    <div class="cr_tt">经典活动</div>
+    <div id="cr_cl">
+    {旅游:文章列表开始 行=7 长=10 类=18 截取=10}
+    <a href="/view.asp?newsid={旅游:文章编号}"><img src="{旅游:文章图片地址}" alt="{旅游:文章标题}"  /></a>
+    {旅游:文章列表结束} 
+     </div>
+</div>
+
+
+
+<div id="npLinks" style="clear:both; margin-top:10px; text-align:center;">
+{旅游:活动终极列表导航}</div>
+</div>
+
+
+
+
+
+<div class="nor" id="bot">
+<div style="line-height:22px; width:970px; margin:0px auto;">友情链接：xxxx</div> 
+服务热线：00000，传真：00000，手机：00000，QQ：0000000<br />
+版权所有 © 地址信息</div>
+
+</body>
+</html>

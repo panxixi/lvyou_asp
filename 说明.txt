@@ -1,0 +1,30 @@
+4.0更新内容
+1.增加乘车地点
+2.增加购买保险 一人购买多份保险 并且在后台显示
+3.优化后台名单打印界面以及美化后台打印结果
+5.优化后台活动添加人数-Ajax更新
+6.帮会员报名通过Ajax动态获取会员资料
+7.修复许多小Bug.
+*****************************************************
+
+
+使用说明:
+本系统代码模版完全分离!
+模版目录TempList 用户界面模版 TempList/Users
+首页模版TempList/Index.Html
+产品列表模版TempList/ProList.Html
+产品内容页TempList/View.Html
+新闻列表模版TempList/NewsList.Html
+新闻内容页TempList/View.Html
+顶部模版TempList/Top.Html
+-----------------------------------------
+更改数据库默认路径:Inc\const.asp
+一定要记得更改Admin目录名称，更改之后不会影响到系统功能
+
+后台默认管理员 
+
+用户:Admin 
+
+密码:admin 
+
+默认验证码:qcms

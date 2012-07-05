@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={qesy:charset}" />
+<title>{qesy:webname}</title>
+<link href="{qesy:skin}css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="main">
+{include:header.html}
+  <div id="bodyer">
+    <div id="left">
+      <div class="ad"><strong>Q版企业管理系统</strong><br>简单快速，功能强大的企业管理系统，动态标签，模版分离。
+      </div>
+      <div class="tp"><h3>友情连接</h3>
+        <div class="links"><ul><li><a href="#"><img src="images/163.gif" border="0" /></a><li><a href="#"><img src="images/163.gif" border="0" /></a><li><a href="#"><img src="images/163.gif" border="0" /></a></ul></div>
+      </div>
+    </div>
+    <div id="right"><h1>{cbq:ntitle}</h1>
+      <div class="info2">作者：QCMS&nbsp;&nbsp;阅读次数：{cbq:readcount}次 &nbsp;&nbsp;发布时间：{cbq:posttime}&nbsp;&nbsp;所属栏目：{cbq:cname} </div>
+      <div class="content2">{cbq:ncontent}<br>上一篇：{cbq:pre}<br>下一篇：{cbq:next}<br>用户留言：
+	  <script language="javascript" src="http://localhost/review.asp?id={cbq:id}&act=js"></script><br>
+	  <form id="form1" name="form1" method="post" action="{qesy:install}inc/get_re.asp">
+
+<table width="100%" border="1" cellspacing="0">
+  <tr>
+    <td width="15%">用户名：</td>
+    <td width="85%"><label>
+      <input type="text" name="poster" id="poster" />
+      <input name="newsid" type="hidden" id="newsid" value="{cbq:id}" />
+    </label></td>
+  </tr>
+  <tr>
+    <td>内容</td>
+    <td><label>
+      <textarea name="dcontent" cols="40" rows="5" id="dcontent"></textarea>
+    </label></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><label>
+      <input type="text" name="code" id="code" style="width:60px" />
+    </label><img src="{qesy:install}inc/code.asp" border="0"  />&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>
+      <input type="submit" name="button" id="button" value="提交" />
+    </label></td>
+  </tr>
+</table>
+</form>
+	  </div>
+    </div>
+  </div>
+{include:footer.html}
+</div>
+</body>
+</html>

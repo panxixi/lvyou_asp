@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={qesy:charset}" />
+<title>{qesy:webname}</title>
+<link href="{qesy:skin}css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="main">
+ {include:header.html}
+  <div id="bodyer">
+    <div id="left">
+	<iframe name="logining" src="login.asp" frameborder="0" scrolling="no" width="100%" height="130px" style="background-color:#000000"></iframe>
+      <div class="ad"><strong>Q版企业管理系统</strong><br>简单快速，功能强大的企业管理系统，动态标签，模版分离。
+      </div>
+      <div class="tp"><h3>友情连接</h3>
+        <div class="links"><ul><li><a href="#"><img src="images/163.gif" border="0" /></a><li><a href="#"><img src="images/163.gif" border="0" /></a><li><a href="#"><img src="images/163.gif" border="0" /></a></ul></div>
+      </div>
+    </div>
+    <div id="right"><h4>系统介绍</h4><div class="info">
+      <div class="infol"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QCMS是一个小型网站管理系统，灵活，方便是最大特色，为初学者快速度架设网站首选。ASP+ACCESS，ASP+SQL，PHP+MYSQL;只要一个ASP或PHP空<br />
+  间即可直接架设，无需更多复杂的操作，程序开源，模版分离，动态标签，只要会HTML就可以做出个性化的网站。 </p>
+
+</div>
+    </div>
+      <div class="news">
+        <div class="nclass"><h5>公司新闻</h5>
+          <div class="list"><ul>
+              {arclist row=6 cid=1 tim=2 tlen=2}
+              <li><a href="{fqesy:curl}">{fqesy:cname}</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="{fqesy:url}">{fqesy:ntitle}</a>{fqesy:posttime}{arcend}
+          </ul></div>
+        </div>
+        <div class="nclass"><h5>公司新闻</h5>
+          <div class="list"><ul>{arclist row=6 cid=1 tim=2}<li> <a href="{fqesy:url}">{fqesy:ntitle}</a>&nbsp;&nbsp;&nbsp;&nbsp;{fqesy:posttime}{arcend}</ul></div>
+        </div>
+      </div>
+      <h4>公司产品</h4>
+      <div class="chanpin"><ul>
+	  {arclist row=4 cid=2 tim=2}
+	  <li><a href="{fqesy:url}"><img src="{fqesy:img}" class="img" /></a>
+        <div class="name"><a href="{fqesy:url}">{fqesy:ntitle}</a></div>{arcend}
+     </ul>
+      </div>
+    </div>
+    
+  </div>
+{include:footer.html}
+</div>
+</body>
+</html>

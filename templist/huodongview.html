@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="ROBOTS" content="all" />
+<meta name="keywords" content="xxx" />
+<meta name="description" content="xx" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>旅行者旅游系统</title>
+{旅游_包含:top.html}
+
+<div class="nor" id="vitle">
+您正在浏览 &rsaquo; <a href="/" target="_self">首页</a> &rsaquo; <a href="#" target="_self">活动旅程</a> &rsaquo; <font color="#FF6600"><i>{旅游:HDYM活动名称}</i></font>
+</div>
+
+<div id="content" class="nor">
+<div id="content_l">
+    <div style="width:100%; overflow:hidden;"><img src="{旅游:HDYM活动图片地址}" /></div>
+    <div id="cl_ct"><div class="cl_ct_l oh"></div>
+    <div class="cl_ct_c">
+报名热线：xxxxx / xxxxx 咨询QQ:xxxx    </div><div class="cl_ct_r oh"></div></div>
+    <div id="cl_class">
+	  <div class="tit" style="background:url(/images/icons/icon_1.gif) no-repeat 12px center #D3E2F3; text-indent:38px;">{旅游:HDYM活动名称}</div>
+	<div class="class">
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+  <tr style="color:#006666;">
+    <td align="center">活动状态</td>
+    <td>&shy;{旅游:HDYM活动状态}</td>
+  </tr>
+  <tr style="color:#009900;">
+    <td align="center">活动编号　&shy;</td>
+    <td>&shy;{旅游:HDYM活动编号}</td>
+  </tr>
+  <tr style="color:#006666;">
+    <td align="center">活动领队　&shy;</td>
+    <td>&shy;{旅游:HDYM活动领队}</td>
+  </tr>
+  <tr style="color:#009900;">
+    <td align="center">报名方式</td>
+    <td>报名热线：xxxxxx  &nbsp;&nbsp;手机：xxxxxx&nbsp;&nbsp; 咨询QQ:xxxx &nbsp;&nbsp;在线报名</td>
+  </tr>
+  <tr style="color:#006666;">
+    <td align="center">活动积分</td>
+    <td>&shy;{旅游:HDYM活动积分}</td>
+  </tr>
+   <tr style="color:#006666;">
+    <td width="170" align="center">活动出发时间</td>
+    <td>&shy;{旅游:HDYM活动出发时间}</td>
+  </tr>
+   <tr style="color:#009900;">
+    <td width="170" align="center">活动返回时间</td>
+    <td>&shy;{旅游:HDYM活动返回时间}</td>
+  </tr>
+     <tr style="color:#009900;">
+    <td width="170" align="center">在线报名</td>
+    <td>&shy;<input type="submit" name="xbutton" id="xxbutton" onclick="location.href='baoming.asp?huoDongId={旅游:HDYM活动编号}';" value="我 要 报 名" /></td>
+  </tr>
+  
+</table>
+	</div>
+<script type="text/javascript">
+var sid = "id_ac";
+function showParts(id){
+	if(sid==id) return;
+	try{
+		$("c"+sid).style.display = "none";
+		$("c"+ id).style.display = "block";
+		$(sid).className = "a";
+		$( id).className = "b";
+		sid = id;
+	}catch(e){}
+}
+</script>
+<div class="tit" style="margin-bottom:5px;">
+<span class="a oh" style="width:5px;"></span>
+<a id="id_ac" href="javascript:void(0);" class="b" onclick="showParts(this.id);">活动行程</a>
+<a id="id_in" href="javascript:void(0);" class="a" onclick="showParts(this.id);">活动协议</a>
+<a id="id_sv" href="javascript:void(0);" class="a" onclick="showParts(this.id);">旅游保险</a>
+<a id="id_py" href="javascript:void(0);" class="a" onclick="showParts(this.id);">付款方式</a>
+<a id="id_wt" href="javascript:void(0);" class="a" onclick="showParts(this.id);">天气查询</a>
+<a id="id_pr" href="javascript:void(0);" class="a" onclick="showParts(this.id);">打印行程</a>
+</div>
+<!-- ---------- 活动行程 ---------- -->
+<style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+-->
+</style>
+
+<div id="cid_ac" class="act_con txs" style="display:block;">
+{旅游:HDYM活动行程}
+</div>
+
+<!-- ---------- 注意事项 ---------- -->
+<div id="cid_in" class="act_con txs">
+{旅游:HDYM活动协议}
+</div>
+
+
+        <!-- ---------- 旅游保险 ---------- -->
+        <div id="cid_sv" class="act_con txs">
+旅游保险
+</div>
+
+
+        
+        <!-- ---------- 付款方式 ---------- -->
+        <div id="cid_py" class="act_con txs">【交费方式】需预交费(预付定金200元/人,余款可出行前转账或上车后交)<br />
+          <strong>农业银行  xxxxx <br />
+          工商银行  xxxx <br />
+          建设银行：xxxx<br />
+        中国银行：xxxx</strong></div>
+        
+    <!-- ---------- 注意事项 ---------- -->
+        <div id="cid_wt" class="act_con txs">
+        <a href="http://www.nmc.gov.cn/" target="_blank">>> 全国各地天气查询</a><br/>
+        游自在户外提醒您：出行多注意天气变化，确保外出平安！
+        </div>
+        
+        <!-- ---------- 打印行程 ---------- -->
+        <div id="cid_pr" class="act_con txs">
+        打印行程
+        </div>
+    </div>
+
+
+</div><div id="content_r">
+    <div class="cr_tt">推荐活动</div>
+    <div id="cr_cm">
+        {旅游:活动列表开始 行=8 排=1 截取=20}
+    <a href="/huodong.asp?huodongId={旅游:活动编号}" target="_blank" class="txs"><font color="#CC3300">{旅游:列表页活动名称}</font></a>
+    {旅游:活动列表结束}
+     </div>
+    <div class="cr_tt">经典活动</div>
+    <div id="cr_cl">
+    {旅游:文章列表开始 行=7 长=10 类=18 截取=10}
+    <a href="/view.asp?newsid={旅游:文章编号}"><img src="{旅游:文章图片地址}" alt="{旅游:文章标题}"  /></a>
+    {旅游:文章列表结束} 
+     </div>
+</div>
+
+
+
+<div class="nor" id="bot">
+<div style="line-height:22px; width:970px; margin:0px auto;">友情链接：xxxxxx</div> 
+服务热线：000000000000，传真：00000000，手机：0000000，QQ：000000<br />
+版权所有 © xxxx地址：xxxx</div>
+
+</body>
+</html>

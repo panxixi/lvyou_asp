@@ -1,0 +1,60 @@
+* { margin:0; padding:0; }
+
+h2
+{
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+a.normal:link       { font: 12px verdana; color: #778AAF; text-decoration: underline }
+a.normal:active     { font: 12px verdana; color: #778AAF; text-decoration: underline }
+a.normal:visited    { font: 12px verdana; color: #778AAF; text-decoration: underline }
+a.normal:hover      { font: 12px verdana; color: #FF9900; text-decoration: none }
+
+.copyright
+{
+  font-size: 12px;
+  color: #666666;
+}
+
+fieldset                { border:none; }
+
+#page-login                             { background:#f8f8f8; text-align:center; }
+.login-container                        { width:481px; padding-left:32px; background:url(images/logo.png) no-repeat; margin:160px auto; text-align:center; }
+.login-box                              { position:relative; }
+.login-form                             { padding:12px 57px 35px 57px; background:url(images/login_box_bg.jpg) no-repeat; text-align:left; }
+.login-form #messages                   { margin:0 0 12px 0; color: #FF3300;}
+.login-form .input-left                 { float:left; width:50%; }
+.login-form .input-right                { float:right; width:50%; }
+.login-form .input-box input.input-text { width:94%; }
+.login-form .input-box input.input-text.forgot-password { width:100%; }
+.login-form h2                          { font-size:12px; font-weight:normal; color: #003399; padding:0 0 20px 0;}
+.login-form label                       { font-weight:bold; font-size: 14px;  font-family: verdana;  color: #000066;}
+.login-form .form-buttons               { padding-top:12px; clear:both; text-align:right; }
+.login-box .bottom  {
+    width:481px;
+    height:5px;
+    background:url(images/login_box_bottom.jpg) no-repeat;
+    overflow:hidden;
+    }
+.login-container .legal {
+    margin:0;
+    background:url(images/login_box_legal_bg.gif) no-repeat;
+    padding:8px 8px 5px 8px;
+    font-size:12px;
+    }
+.login-form .validation-advice          { margin:0 17px 0 0; }
+.login-form .forgot-link                { margin:0 17px 0 0; text-align:right; }
+
+button, .form-button {
+    border-width:1px;
+    border-style:solid;
+    border-color:#ed6502 #a04300 #a04300 #ed6502;
+    padding:2px 7px 1px 7px;
+    background:url(images/btn_bg.gif) #ffac47 repeat-x 0 100%;
+    color:#fff;
+    font:bold 12px arial, helvetica, sans-serif;
+    cursor:pointer;
+    text-align:center !important;
+    white-space:nowrap;
+    }
+

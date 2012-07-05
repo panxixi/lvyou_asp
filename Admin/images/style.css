@@ -1,0 +1,112 @@
+/*简易型弹出菜单*/
+.simpleMenu{
+	width:50px;
+}
+.simpleMenu .arrow{
+	background-image: url(menu/arror_down.gif);
+	background-repeat: no-repeat;
+	background-position:95% 40%;
+}
+.simpleMenu .border{
+	border:solid 1px #9ebfe2;/*菜单链接边框色*/
+}
+.simpleMenu .hoverBorder{
+	border:solid 1px #9ebfe2;/*菜单链接边框色*/
+}
+.simpleMenu_link{
+}
+.simpleMenu_link a{
+	padding:0 0 0 5px;
+	display:block;
+}
+.simpleMenu_link a:hover{
+	text-decoration:none;
+	color:black;
+}
+
+.simpleMenu_con{
+	width:100px;
+	border:solid 1px #9ebfe2;/*菜单选项区边框色*/
+	display:none;
+	position:absolute;
+	background-color:white;
+}
+.simpleMenu_con span{
+	display:block;
+	clear:both;
+	height:25px;
+	line-height:25px;
+}
+.simpleMenu_con a{
+	display:block;
+	height:25px;
+	padding:0 0 0 5px;
+}
+.simpleMenu_con a:hover{
+	background-color:#3366cc;/*菜单选项鼠标移入背景色*/
+	color:white;
+	text-decoration:none;
+}
+/*简易型弹出菜单*/
+.clear{
+	clear:both;
+	line-height:1px;
+}
+.icon_add{
+	background-image: url(menu/add.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+	float: left;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.icon_edit{
+	background-image: url(menu/edit.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+	float: left;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.icon_delete{
+	background-image: url(menu/delete.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+	float: left;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.icon_view{
+	background-image: url(menu/view.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+	float: left;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.icon_save{
+	background-image: url(menu/save.gif);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+	float: left;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.img_add{
+	background-image: url(menu/add.gif);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 16px;
+	display: block;
+	float: left;
+}

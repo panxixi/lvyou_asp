@@ -1,0 +1,41 @@
+<!--Login Start-->
+<div class="padding_5">
+{旅游:判断开始 {旅游:检测登陆} > 0 }
+
+<p>&nbsp;</p>
+	<p class="margin_t10" style="text-align:center;">欢迎您 <font color="#FF0000">{旅游:用户名称}</font>　</p>
+	<p class="margin_t10" style="text-align:center;">您的当前积分: <font color="#FF0000">{旅游:当前积分}</font></p>
+{旅游:提示语句}
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="32" align="center" valign="middle"><a href="./Users/Huodong.asp?Action=ZXin">最新活动</a></td>
+              </tr>
+              <tr>
+              	<td height="32" align="center" valign="middle"><a href="./Users/Huodong.asp?Action=Ybao">已报活动</a></td>
+              </tr>
+              <tr>
+                <td height="32" align="center" valign="middle"><a href="./Users/Huodong.asp?Action=CGuo">错过活动</a></td>
+              </tr>
+              <tr>
+              	<td height="32" align="center" valign="middle"><a href="./Users/UserOption.asp">用户资料</a><!--(<a href="./UserOption.asp?Action=Head">头像</a>)--></td>
+              </tr>
+              <tr>
+                <td height="32" align="center" valign="middle"><a href="./Users/UserOption.asp?Action=Password">密码修改</a></td>
+              </tr>
+</table>
+	<p class="margin_t10" style="text-align:center;"><a href="/Users/">会员中心</a>		<a href="/Users/Login.asp?Action=Logout">退出登陆</a></p>
+{旅游:否则}
+	<p class="margin_t10">　用户名：<input type="text" name="username" id="username" class="text1" value="请输入用户名" onblur="if(this.value==''){this.value='请输入用户名';this.style.color='#999';}" onfocus="if(this.value=='请输入用户名'){this.value='';this.style.color='#000';}"  align="middle" style="width:140px; color:#999" /></p>
+	<p class="margin_t10 margin_b10">　密　码：<input type="password" name="password" id="password" class="text1" align="middle" style="width:140px;" value="" /></p>
+
+
+	<p>　<input type="checkbox" id="cookietime" name="cookietime" value="315360000"  style="margin-bottom: -2px;" /><label for="cookietime">下次自动登录</label>
+	　								<a href="#" class="a2">忘记密码？</a>
+	</p><div class="clear"></div>
+	<div class="margin_t10 margin_b10 margin_r10 button1 float_left" style="margin-left:61px;">
+	<p><a href="/txapi/deal.asp?apiType=qq"><img src="/images/qq_login.gif" border="0" /></a></p>
+	<input type="submit" id="loginsubmit" name="loginsubmit" value="登　录" class="submit" />
+	<a href="/users/reg.asp" />注　册</a></div>
+{旅游:判断结束}
+</div>	
+<!--Login End-->

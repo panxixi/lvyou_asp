@@ -1,0 +1,206 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{万邦:网站名称}</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script Language="JavaScript">
+function FormCheck(form1) {
+<!--开始-->
+
+if (document.form1.title.value =="") 
+{ 
+alert("请输入留言标题！"); 
+form1.title.focus();
+return false;
+}
+var filter=/^s*[A-Za-z0-9]{5,15}s*$/;<!--验证数字和英文的长度-->
+var qqfilter=/^s*[0-9]{5,11}s*$/;<!--验证QQ长度-->
+var titfilter=/.{1,21}$/;
+var contfilter=/.{1,100}$/;
+
+if (!titfilter.test(form1.title.value)) { 
+alert("标题不能超过20个汉字。"); 
+form1.title.focus();
+return false; 
+} 
+if (document.form1.name.value =="") 
+{ 
+alert("请输入您的姓名！"); 
+form1.name.focus();
+return false;
+}
+if (!titfilter.test(form1.name.value)) { 
+alert("姓名不能超过20个汉字。"); 
+form1.name.focus();
+return false; 
+} 
+
+if (document.form1.tel.value =="") 
+{ 
+alert("请输入您的电话！"); 
+form1.tel.focus();
+return false;
+}
+if (!qqfilter.test(form1.tel.value)) { 
+alert("电话只能输入5-11个数字"); 
+form1.tel.focus();
+return false; 
+} 
+if (document.form1.email.value =="") 
+{ 
+alert("请输入您的电子邮箱！"); 
+form1.email.focus();
+return false;
+}
+if (document.form1.qq.value =="") 
+{ 
+alert("请输入您的QQ！"); 
+form1.qq.focus();
+return false;
+}
+if (!qqfilter.test(form1.qq.value)) { 
+alert("QQ输入不正确，请重新输入"); 
+form1.qq.focus();
+return false; 
+} 
+if (document.form1.content.value =="") 
+{ 
+alert("请输入留言内容！"); 
+form1.content.focus();
+return false;
+}
+if (!contfilter.test(form1.content.value)) { 
+alert("内容不能超过100个汉字。"); 
+form1.content.focus();
+return false; 
+} 
+<!--结束-->
+}
+</script>
+
+</head>
+
+<body>
+{万邦_包含:top.html}
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="1000" class="daohangxia" height="27" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="557" align="left" valign="middle">&nbsp; <img src="images/icon_1.gif" width="11" height="9" /> 您现在的位置 &gt;&gt; <a href="/">网站首页</a> &gt;&gt; <a href="./list.asp?classid={万邦:分类编号}">{万邦:分类标题}</a></td>
+        <td width="443" align="left" valign="middle">&nbsp; <img src="images/icon_1.gif" width="11" height="9" /> 今天是：
+          <script src="js/today.js"></script></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="2" align="center" valign="middle" background="images/dh_line.gif" class="daohang"></td>
+  </tr>
+</table>
+<table width="880" height="605" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="220" align="center" valign="top"><table width="215" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="5" colspan="3"></td>
+      </tr>
+      <tr>
+        <td width="5" height="29"><img src="images/title_01.gif" width="5" height="29" /></td>
+        <td align="center" valign="middle" background="images/title_03.gif"><table width="100%" height="22" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="92" align="center" valign="middle"><img src="images/icon_1.gif" width="10" height="10" /> <span class="title_font">通知公告</span></td>
+            <td width="49" align="center" valign="middle">&nbsp;</td>
+            <td width="59" align="center" valign="middle" class="title_link"><a href="./list.asp?classid=47">更多&gt;&gt;</a></td>
+          </tr>
+        </table></td>
+        <td width="5" align="right"><img src="images/title_02.gif" width="5" height="29" /></td>
+      </tr>
+      <tr>
+        <td height="210" colspan="3" class="title_bk"><marquee direction="up" scrollamount="2">
+        {万邦:文章列表开始 行=6 类=47 长=10 期=2}
+            <table class="erji_line_1">
+              <tr>
+                <td><a href="{万邦:文章内容地址}">·{万邦:文章标题}</a> [{万邦:文章发表时间}]</td>
+              </tr>
+            </table>
+            {万邦:文章列表结束}
+        </marquee></td>
+      </tr>
+    </table>
+      <table width="215" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="5" colspan="3"></td>
+        </tr>
+        <tr>
+          <td width="5" height="29"><img src="images/title_01.gif" width="5" height="29" /></td>
+          <td align="center" valign="middle" background="images/title_03.gif"><table width="100%" height="22" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="92" align="center" valign="middle"><img src="images/icon_1.gif" width="10" height="10" /> <span class="title_font">组织机构</span></td>
+                <td width="49" align="center" valign="middle">&nbsp;</td>
+                <td width="59" align="center" valign="middle" class="title_link"><a href="./list.asp?classid=49">更多&gt;&gt;</a></td>
+              </tr>
+          </table></td>
+          <td width="5" align="right"><img src="images/title_02.gif" width="5" height="29" /></td>
+        </tr>
+        <tr>
+          <td height="150" colspan="3" class="title_bk">{万邦:文章列表开始 行=6 类=49 长=10 期=2}
+            <table class="erji_line_1" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr height="18">
+                <td width="6%" align="center">·</td>
+                <td>{万邦:文章标题}</td>
+              </tr>
+            </table>
+          {万邦:文章列表结束} </td>
+        </tr>
+      </table>
+      <table height="145" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" valign="middle"><a href="mailto:xx@163.com"><img border="0" src="images/xx1.gif" width="208" height="58" /></a></td>
+        </tr>
+        <tr>
+          <td align="center" valign="middle"><a href="./guest.asp"><img border="0" src="images/xx2.gif" width="208" height="58" /></a></td>
+        </tr>
+      </table>
+    </td>
+    <td align="center" valign="top"><table width="655" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="5" colspan="3"></td>
+      </tr>
+      <tr>
+        <td width="8" height="29" background="images/title_03.gif"><img src="images/title_01.gif" width="5" height="29" /></td>
+        <td width="642" align="center" valign="middle" background="images/title_03.gif"><table width="100%" height="22" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="92" align="center" valign="middle"><img src="images/icon_1.gif" width="10" height="10" /> <span class="title_font">留言本</span></td>
+            <td align="center" valign="middle">&nbsp;</td>
+            <td width="59" align="center" valign="middle" class="title_link">更多&gt;&gt;</td>
+          </tr>
+        </table></td>
+        <td width="5" align="right"><img src="images/title_02.gif" width="5" height="29" /></td>
+      </tr>
+      <tr>
+        <td height="210" colspan="3" align="center" valign="top" class="title_bk"><table width="100%"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="40%" height="543" align="center" valign="top">{万邦:留言本}{万邦:留言表单}</td>
+          </tr>
+          <tr>
+            <td height="25" align="right" valign="middle"><span class="font_01">【返回】 【顶部】   【关闭】</span></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<table width="880" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="5"></td>
+  </tr>
+  <tr>
+    <td height="7" bgcolor="ce5401"></td>
+  </tr>
+  <tr>
+    <td height="75" align="center" valign="middle" class="font_01">{万邦:版权信息}</td>
+  </tr>
+</table>
+</body>
+</html>
